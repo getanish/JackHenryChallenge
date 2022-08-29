@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "JackHenryChallenge": {
+      "commandName": "Project",
+      "environmentVariables": {
+        //"AppSettings:TwitterConfig:BearerToken": "##EnterToken##"
+      }
+    }
+  }
+}
