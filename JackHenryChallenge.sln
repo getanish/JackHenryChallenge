@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D99726F7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JackHenryChallenge.Tests", "JackHenryChallenge.Tests\JackHenryChallenge.Tests.csproj", "{6CB61DE6-E1D2-4F1C-8EB6-C9022EE81F82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JackHenryChallenge.IntegrationTests", "JackHenryChallenge.IntegrationTests\JackHenryChallenge.IntegrationTests.csproj", "{4554CFAB-B19B-4083-966F-A10AECBC4F45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{6CB61DE6-E1D2-4F1C-8EB6-C9022EE81F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CB61DE6-E1D2-4F1C-8EB6-C9022EE81F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CB61DE6-E1D2-4F1C-8EB6-C9022EE81F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4554CFAB-B19B-4083-966F-A10AECBC4F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4554CFAB-B19B-4083-966F-A10AECBC4F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4554CFAB-B19B-4083-966F-A10AECBC4F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4554CFAB-B19B-4083-966F-A10AECBC4F45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6CB61DE6-E1D2-4F1C-8EB6-C9022EE81F82} = {D99726F7-A720-46DA-A809-B5478276AC49}
+		{4554CFAB-B19B-4083-966F-A10AECBC4F45} = {D99726F7-A720-46DA-A809-B5478276AC49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE923001-C847-441E-B5F2-EB19A2AA1A2A}
