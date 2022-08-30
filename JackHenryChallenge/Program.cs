@@ -1,6 +1,5 @@
 ﻿using JackHenryChallenge.Data;
 using JackHenryChallenge.Data.Interfaces;
-using JackHenryChallenge.Entities;
 using JackHenryChallenge.Models;
 using JackHenryChallenge.ServiceAgents;
 using JackHenryChallenge.ServiceAgents.Interfaces;
@@ -21,27 +20,18 @@ namespace JackHenryChallenge
     {
         public static async Task Main(string[] args)
         {
-            var configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
-                .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json", true)
-                .Build();
-            using (var logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(configuration)
-                .CreateLogger())
+            using (var logger = GetLogger(GetConfiguration()))
             {
-
-                Console.WriteLine("JackHenryChallenge:Start");
-
                 try
                 {
                     Console.OutputEncoding = System.Text.Encoding.UTF8;
-                    using IHost host = CreatHostBuilder(logger).Build();
+                    Console.WriteLine("JackHenryChallenge:Start");
+                    using IHost host = CreateHostBuilder(logger).Build();
                     await host.RunAsync();
                 }
                 catch (Exception ex)
                 {
-                    logger.Error(ex, "Aplication Exception");
+                    logger.Error(ex, "Application Exception");
                     Console.WriteLine("Application error: Please refer the logs.");
                 }
                 finally
@@ -49,9 +39,25 @@ namespace JackHenryChallenge
                     Console.WriteLine("JackHenryChallenge:End");
                 }
             }
+
+            static IConfigurationRoot GetConfiguration()
+            {
+                return new ConfigurationBuilder()
+                                .SetBasePath(Directory.GetCurrentDirectory())
+                                .AddJsonFile("appsettings.json")
+                                .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json", true)
+                                .Build();
+            }
+
+            static Logger GetLogger(IConfigurationRoot configuration)
+            {
+                return new LoggerConfiguration()
+                                .ReadFrom.Configuration(configuration)
+                                .CreateLogger();
+            }
         }
 
-        internal static IHostBuilder CreatHostBuilder(Logger logger)
+        internal static IHostBuilder CreateHostBuilder(Logger logger)
         {
             return Host.CreateDefaultBuilder()
                                 .ConfigureServices((context, services) =>

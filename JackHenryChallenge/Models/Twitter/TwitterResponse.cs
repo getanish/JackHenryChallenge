@@ -1,4 +1,4 @@
-﻿namespace JackHenryChallenge.Entities.Twitter
+﻿namespace JackHenryChallenge.Models.Twitter
 {
     public class TwitterResponse<T> where T : class
     {

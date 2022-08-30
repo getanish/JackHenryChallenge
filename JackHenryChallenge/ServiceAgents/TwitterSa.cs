@@ -1,11 +1,11 @@
-﻿using JackHenryChallenge.Entities;
-using JackHenryChallenge.Entities.Twitter;
-using JackHenryChallenge.ServiceAgents.Interfaces;
+﻿using JackHenryChallenge.ServiceAgents.Interfaces;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
+using JackHenryChallenge.Models;
+using JackHenryChallenge.Models.Twitter;
 
 namespace JackHenryChallenge.ServiceAgents
 {

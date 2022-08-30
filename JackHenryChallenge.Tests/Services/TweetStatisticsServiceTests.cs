@@ -1,4 +1,5 @@
 ﻿using JackHenryChallenge.Data.Interfaces;
+using JackHenryChallenge.Models;
 using JackHenryChallenge.Services;
 using Moq;
 

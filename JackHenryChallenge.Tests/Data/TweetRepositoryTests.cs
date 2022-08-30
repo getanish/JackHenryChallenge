@@ -1,4 +1,5 @@
 ﻿using JackHenryChallenge.Data;
+using JackHenryChallenge.Models;
 
 namespace JackHenryChallenge.Tests.Data
 {

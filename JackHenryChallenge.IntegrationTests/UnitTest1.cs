@@ -34,7 +34,7 @@ namespace JackHenryChallenge.IntegrationTests
                     });
                 using (var logger = new LoggerConfiguration().CreateLogger())
                 using (var client = new HttpClient(mockMessageHandler.Object))
-                using (var host = CreatHostBuilder(logger, client).Build())
+                using (var host = CreateHostBuilder(logger, client).Build())
                 using (StringWriter sw = new StringWriter())
                 {
                     client.BaseAddress = new Uri("https://api.twitter.com");
@@ -48,9 +48,9 @@ namespace JackHenryChallenge.IntegrationTests
             }
         }
 
-        internal static IHostBuilder CreatHostBuilder(Logger logger, HttpClient client)
+        internal static IHostBuilder CreateHostBuilder(Logger logger, HttpClient client)
         {
-            var hostBuilder = Program.CreatHostBuilder(logger);
+            var hostBuilder = Program.CreateHostBuilder(logger);
             hostBuilder.ConfigureServices((context, services) =>
             {
                 var serviceDescriptor = services.FirstOrDefault(descriptor => descriptor.ServiceType == typeof(HttpClient));

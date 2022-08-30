@@ -1,4 +1,6 @@
-﻿namespace JackHenryChallenge.Tests.Models
+﻿using JackHenryChallenge.Models;
+
+namespace JackHenryChallenge.Tests.Models
 {
     public class HashTagTests
     {

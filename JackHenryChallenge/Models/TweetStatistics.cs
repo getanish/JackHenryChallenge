@@ -1,6 +1,4 @@
-﻿using JackHenryChallenge.Entities;
-
-namespace JackHenryChallenge.Models
+﻿namespace JackHenryChallenge.Models
 {
     public class TweetStatistics
     {

@@ -1,6 +1,4 @@
-﻿using JackHenryChallenge.Models.Twitter;
-
-namespace JackHenryChallenge.Entities.Twitter
+﻿namespace JackHenryChallenge.Models.Twitter
 {
     public class GetSampleStreamRequest
     {

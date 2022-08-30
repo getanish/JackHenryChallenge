@@ -1,4 +1,4 @@
-﻿namespace JackHenryChallenge.Entities
+﻿namespace JackHenryChallenge.Models
 {
     /// <summary>
     /// Twitter Hash Tag

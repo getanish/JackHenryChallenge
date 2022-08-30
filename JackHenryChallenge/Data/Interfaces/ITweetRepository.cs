@@ -1,4 +1,4 @@
-﻿using JackHenryChallenge.Entities;
+﻿using JackHenryChallenge.Models;
 
 namespace JackHenryChallenge.Data.Interfaces
 {

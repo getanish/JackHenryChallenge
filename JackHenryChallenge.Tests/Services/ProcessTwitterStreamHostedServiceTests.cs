@@ -1,5 +1,6 @@
 ﻿using JackHenryChallenge.Data.Interfaces;
-using JackHenryChallenge.Entities.Twitter;
+using JackHenryChallenge.Models;
+using JackHenryChallenge.Models.Twitter;
 using JackHenryChallenge.ServiceAgents.Interfaces;
 using JackHenryChallenge.Services;
 using Microsoft.Extensions.Hosting;

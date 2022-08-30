@@ -1,5 +1,5 @@
-﻿using JackHenryChallenge.Entities;
-using JackHenryChallenge.Entities.Twitter;
+﻿using JackHenryChallenge.Models;
+using JackHenryChallenge.Models.Twitter;
 
 namespace JackHenryChallenge.ServiceAgents.Interfaces
 {

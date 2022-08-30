@@ -1,6 +1,6 @@
 ﻿using JackHenryChallenge.Data.Interfaces;
-using JackHenryChallenge.Entities;
 using System.Collections.Concurrent;
+using JackHenryChallenge.Models;
 
 namespace JackHenryChallenge.Data
 {

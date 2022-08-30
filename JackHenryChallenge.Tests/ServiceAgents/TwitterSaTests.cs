@@ -1,5 +1,4 @@
-﻿using JackHenryChallenge.Entities.Twitter;
-using JackHenryChallenge.Models.Twitter;
+﻿using JackHenryChallenge.Models.Twitter;
 using JackHenryChallenge.ServiceAgents;
 using Microsoft.Extensions.Logging;
 using Moq;
@@ -8,6 +7,7 @@ using System.Collections.Concurrent;
 using System.Net;
 using System.Text;
 using System.Text.Json;
+using JackHenryChallenge.Models;
 
 namespace JackHenryChallenge.Tests.ServiceAgents
 {

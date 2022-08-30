@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace JackHenryChallenge.Entities
+﻿namespace JackHenryChallenge.Models
 {
     public class Tweet
     {

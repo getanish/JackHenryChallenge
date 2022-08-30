@@ -1,5 +1,4 @@
-﻿using JackHenryChallenge.Entities;
-using JackHenryChallenge.Models;
+﻿using JackHenryChallenge.Models;
 using JackHenryChallenge.Services.Interfaces;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
