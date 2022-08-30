@@ -8,7 +8,7 @@ namespace JackHenryChallenge.Services
     ///  A NotificationService that notifies to the console
     /// </summary>
     /// <seealso cref="Interfaces.INotificationService" />
-    public class TweetConsoleNotificationService : INotificationService
+    public class TweetConsoleNotificationService : INotificationService<TweetStatistics>
     {
         private readonly ILogger<TweetConsoleNotificationService> _logger;
         public TweetConsoleNotificationService(ILogger<TweetConsoleNotificationService> logger)

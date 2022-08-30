@@ -7,7 +7,7 @@ namespace JackHenryChallenge.Services
     /// <summary>
     /// A TweetStatisticsService that creates tweet statistics
     /// </summary>
-    /// <seealso cref="Interfaces.ITweetStatisticsService" />
+    /// <seealso cref="Interfaces.INotificationInput" />
     public class TweetStatisticsService : ITweetStatisticsService
     {
         private readonly ITweetRepository _tweetRepository;
@@ -21,7 +21,7 @@ namespace JackHenryChallenge.Services
         /// Generates the tweet statistics.
         /// </summary>
         /// <returns></returns>
-        public TweetStatistics GenerateTweetStatistics()
+        public TweetStatistics GetTweetStatistics()
         {
             return new TweetStatistics
             {

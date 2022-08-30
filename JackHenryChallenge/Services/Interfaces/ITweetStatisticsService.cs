@@ -3,14 +3,14 @@
 namespace JackHenryChallenge.Services.Interfaces
 {
     /// <summary>
-    /// Service for Tweet Statistics
+    /// ITweetStatisticsService
     /// </summary>
     public interface ITweetStatisticsService
     {
         /// <summary>
-        /// Generates the tweet statistics.
+        /// Gets the tweet statistics.
         /// </summary>
         /// <returns></returns>
-        TweetStatistics GenerateTweetStatistics();
+        TweetStatistics GetTweetStatistics();
     }
 }

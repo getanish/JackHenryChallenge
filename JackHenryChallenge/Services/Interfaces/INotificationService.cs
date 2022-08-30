@@ -5,8 +5,8 @@ namespace JackHenryChallenge.Services.Interfaces
     /// <summary>
     /// A service that provides notification services
     /// </summary>
-    public interface INotificationService
+    public interface INotificationService<T> where T : class
     {
-        void Notify(TweetStatistics tweetStatistics);
+        void Notify(T notificationInput);
     }
 }
